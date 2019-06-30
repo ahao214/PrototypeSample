@@ -11,7 +11,17 @@ namespace PrototypeSample
     /// </summary>
     class WeeklyLog
     {
-        public Attachment attachment { get; set; }
+        private Attachment attachment;
+        public Attachment Attachment
+        {
+            get {
+                return attachment;
+            }
+            set
+            {
+                attachment = value;
+            }
+        }
         public string Name { get; set; }
         public string Date { get; set; }
         public string Content { get; set; }
